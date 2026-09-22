@@ -249,6 +249,19 @@
             text-shadow: 0 2px 10px rgba(0,0,0,0.6);
         }
 
+        /* Fotos Completas Sin Cajas */
+        .full-photo {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            margin: 60px auto 0 auto;
+            display: block;
+            border-radius: 4px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+            position: relative;
+            z-index: 2;
+        }
+
         /* Botones Glassmorphism */
         .btn-solid {
             display: inline-block; 
@@ -375,15 +388,16 @@
             .envelope { width: 280px; height: 185px; }
             .envelope::before, .envelope::after { border-left-width: 140px; border-right-width: 140px; border-top-width: 92px; border-bottom-width: 92px; }
             .front-flap { border-left-width: 140px; border-right-width: 140px; border-top-width: 100px; }
+            .full-photo { margin-top: 40px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- CAPA DE FONDO FIJA Y ADAPTATIVA (Soluciona problemas de escalado móvil) -->
+    <!-- CAPA DE FONDO FIJA Y ADAPTATIVA -->
     <div id="fixed-bg"></div>
 
-    <!-- PARTÍCULAS MÁGICAS (Cantidad incrementada) -->
+    <!-- PARTÍCULAS MÁGICAS -->
     <div id="magic-dust"></div>
 
     <!-- AUDIO OCULTO -->
@@ -424,6 +438,8 @@
             <p class="anim-element anim-zoom delay-4 body-serif">
                 "Sean bienvenidos a esta noche de ensueño, donde cada instante ha sido creado para celebrar y guardar en el corazón."
             </p>
+            <!-- FOTO 1 -->
+            <img src="assets/1.jpg" alt="Sesión de Nicole" class="anim-element anim-fade-up delay-4 full-photo" onerror="this.style.display='none'">
         </section>
 
         <!-- Fecha y Calendario -->
@@ -436,7 +452,6 @@
                 <div class="calendar-month">Diciembre</div>
                 <div class="calendar-grid">
                     <div class="cal-header">D</div><div class="cal-header">L</div><div class="cal-header">M</div><div class="cal-header">M</div><div class="cal-header">J</div><div class="cal-header">V</div><div class="cal-header">S</div>
-                    <!-- Dic 2026 inicia en Martes -->
                     <div></div><div></div><div class="cal-day">1</div><div class="cal-day">2</div><div class="cal-day">3</div><div class="cal-day">4</div><div class="cal-day">5</div>
                     <div class="cal-day">6</div><div class="cal-day">7</div><div class="cal-day">8</div><div class="cal-day">9</div><div class="cal-day">10</div><div class="cal-day">11</div><div class="cal-day">12</div>
                     <div class="cal-day">13</div><div class="cal-day">14</div><div class="cal-day">15</div><div class="cal-day">16</div><div class="cal-day">17</div><div class="cal-day">18</div><div class="cal-day">19</div>
@@ -446,6 +461,9 @@
             </div>
 
             <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=XV+A%C3%B1os+de+Nicole&dates=20261220T230000Z/20261221T070000Z&details=Acomp%C3%A1%C3%B1ame+en+mi+noche+m%C3%A1gica" target="_blank" class="anim-element anim-fade-up delay-4 btn-solid">Agendar Evento</a>
+            
+            <!-- FOTO 2 -->
+            <img src="assets/2.jpg" alt="Momentos Nicole" class="anim-element anim-fade-up delay-4 full-photo" onerror="this.style.display='none'">
         </section>
 
         <!-- Familia -->
@@ -461,6 +479,9 @@
             <div class="anim-element anim-fade-up delay-4 info-data" style="font-size: 32px;">Guillermo de la Cruz Presenda</div>
             <div class="anim-element anim-fade-up delay-4" style="font-family: 'Cinzel', serif; font-size: 16px; color: var(--crystal-blue); margin: 10px 0;">&</div>
             <div class="anim-element anim-fade-up delay-4 info-data" style="font-size: 32px;">Edith Rumbia Pérez</div>
+
+            <!-- FOTO 3 -->
+            <img src="assets/3.jpg" alt="Familia Nicole" class="anim-element anim-fade-up delay-4 full-photo" onerror="this.style.display='none'">
         </section>
 
         <!-- Ubicación (Solo Recepción) -->
@@ -473,6 +494,9 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.27486553912!2d-94.5281177!3d18.012443100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85e98704f2d54995%3A0x46558e9606333690!2sSal%C3%B3n%20de%20Eventos%20Nanahuatzin!5e0!3m2!1ses-419!2smx!4v1790036293423!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
             <a href="https://maps.app.goo.gl/3ocZ8e648rTWaWt8A?g_st=ic" target="_blank" class="anim-element anim-fade-up delay-4 btn-solid">Ubicación Mágica</a>
+
+            <!-- FOTO 4 -->
+            <img src="assets/4.jpg" alt="Recepción Nicole" class="anim-element anim-fade-up delay-4 full-photo" onerror="this.style.display='none'">
         </section>
 
         <!-- Itinerario / Timeline -->
@@ -514,6 +538,10 @@
                     <div class="timeline-desc">Término del Evento</div>
                 </div>
             </div>
+
+            <!-- FOTO 5 y 6 -->
+            <img src="assets/5.jpg" alt="Itinerario 1" class="anim-element anim-fade-up delay-4 full-photo" onerror="this.style.display='none'">
+            <img src="assets/6.jpg" alt="Itinerario 2" class="anim-element anim-fade-up delay-4 full-photo" onerror="this.style.display='none'">
         </section>
 
         <!-- Dress Code -->
@@ -526,6 +554,9 @@
             <p class="anim-element anim-fade-up delay-4 body-serif" style="font-size: 22px; max-width: 500px;">
                 Se reserva estrictamente el color <strong style="color: var(--crystal-blue); font-weight: 600;">AZUL</strong> para uso exclusivo de la quinceañera.
             </p>
+
+            <!-- FOTO 7 -->
+            <img src="assets/7.jpg" alt="Dress Code" class="anim-element anim-fade-up delay-4 full-photo" onerror="this.style.display='none'">
         </section>
 
         <!-- Mesa de Regalos -->
@@ -538,9 +569,12 @@
             <p class="anim-element anim-fade-up delay-4 body-serif" style="margin-top: 25px; font-size: 22px;">
                 El mejor regalo es su presencia, pero si desean tener un detalle conmigo, en la recepción encontrarán un cofre mágico para su obsequio en efectivo.
             </p>
+
+            <!-- FOTO 8 -->
+            <img src="assets/8.jpg" alt="Regalos Nicole" class="anim-element anim-fade-up delay-4 full-photo" onerror="this.style.display='none'">
         </section>
 
-        <!-- Playlist -->
+        <!-- Playlist y Galeria -->
         <section class="section-block">
             <div class="anim-element anim-fade-up delay-1 info-title">Música</div>
             <div class="anim-element anim-fade-up delay-2 info-data" style="font-size: 40px;">Bailando en el Castillo</div>
@@ -553,10 +587,9 @@
             </div>
             
             <a href="https://open.spotify.com/playlist/5T94KUZNWHR2QVvZWXqofb?si=dfce402db2334fc3&pt=b36785a7b1f74458e374cede4451d344" target="_blank" class="anim-element anim-fade-up delay-4 btn-solid">Añadir Canciones</a>
-        </section>
 
-        <!-- Galería -->
-        <section class="section-block">
+            <div class="anim-element anim-fade-up line-horizontal" style="margin: 70px auto;"></div>
+
             <div class="anim-element anim-fade-up delay-1 info-title">Momentos Inolvidables</div>
             <div class="anim-element anim-fade-up delay-2 info-data" style="font-size: 40px;">Galería en Vivo</div>
             <p class="anim-element anim-fade-up delay-3 body-serif" style="margin: 30px auto; font-size: 22px;">
@@ -566,6 +599,9 @@
                 </span>
             </p>
             <a href="https://drive.google.com/drive/folders/1aOmY6HElUPGfxIFpWN2WnH6hYPFA2iXW?usp=sharing" target="_blank" class="anim-element anim-fade-up delay-4 btn-solid">Compartir Fotos</a>
+
+            <!-- FOTO 9 -->
+            <img src="assets/9.jpg" alt="Momentos Nicole" class="anim-element anim-fade-up delay-4 full-photo" onerror="this.style.display='none'">
         </section>
 
         <!-- RSVP y Pases VIP -->
@@ -628,6 +664,8 @@
             </div>
             <button onclick="sendWish()" class="anim-element anim-fade-up delay-4 btn-solid">Enviar Mensaje</button>
             
+            <!-- FOTO 10 (Despedida) -->
+            <img src="assets/10.jpg" alt="Gracias Nicole" class="anim-element anim-fade-up delay-4 full-photo" onerror="this.style.display='none'">
         </section>
 
     </main>
@@ -636,13 +674,12 @@
         // --- GENERADOR DE PARTÍCULAS MÁGICAS (Aumentado para mayor efecto) ---
         function createMagicDust() {
             const container = document.getElementById('magic-dust');
-            const particleCount = 80; // Aumentamos al doble los brillos
+            const particleCount = 80; 
             
             for(let i = 0; i < particleCount; i++) {
                 let sparkle = document.createElement('div');
                 sparkle.classList.add('sparkle');
                 
-                // Variamos un poco más los tamaños para que se vea más natural y con más profundidad
                 let size = Math.random() * 5 + 3; 
                 let left = Math.random() * 100; 
                 let duration = Math.random() * 6 + 4; 
